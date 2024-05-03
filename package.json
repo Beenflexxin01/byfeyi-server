@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "By Feyi Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://beenflexxin01.com"
+  },
+  "author": "Adenola Omotayo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.0",
+    "node": "^18.20.1",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
+  }
+}
