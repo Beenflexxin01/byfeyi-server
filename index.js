@@ -6,23 +6,23 @@ const path = require("path");
 const app = express();
 const Blog = require("./models/BlogModel");
 const Products = require("./models/ProductListModel");
+
 app.use(express.json());
 
-// app.use(
-//   cors({
-//     credentials: true,
-//     // origin: "http://localhost:5174",
-//     origin: "https://byfeyi.vercel.app/",
-//   })
-// );
+app.use(
+  cors({
+    credentials: true,
+    origin: "http://localhost:5173",
+  })
+);
 
 process.on("UncaughtException", (err) => {
   console.log(err.message);
   console.log("UNCAUGHT EXCEPTION ... SHUTTING DOWN NOW!");
 });
 
-// dotenv.config({ path: "./Server/config.env" });
-dotenv.config({ path: "./config.env" });
+dotenv.config({ path: "./Server/config.env" });
+// dotenv.config({ path: "./config.env" });
 
 const DB = process.env.DATABASE.replace(
   "<password>",
