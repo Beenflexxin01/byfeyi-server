@@ -8,13 +8,13 @@ const Blog = require("./models/BlogModel");
 const Products = require("./models/ProductListModel");
 app.use(express.json());
 
-app.use(
-  cors({
-    credentials: true,
-    // origin: "http://localhost:5174",
-    origin: "https://byfeyi.vercel.app/",
-  })
-);
+// app.use(
+//   cors({
+//     credentials: true,
+//     // origin: "http://localhost:5174",
+//     origin: "https://byfeyi.vercel.app/",
+//   })
+// );
 
 process.on("UncaughtException", (err) => {
   console.log(err.message);
