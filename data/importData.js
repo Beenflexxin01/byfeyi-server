@@ -2,7 +2,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const Blog = require("../models/BlogModel");
-const Products= require("../models/ProductListModel");
+const Products = require("../models/ProductListModel");
 
 // dotenv.config({ path: "./config.env" });
 dotenv.config({ path: "./Server/config.env" });
@@ -51,7 +51,7 @@ const deleteData = async function () {
     console.log(
       "Failed to delete data! Kindly check your internet connection 😪"
     );
-    console.log(err)
+    console.log(err);
   }
   process.exit(1);
 };
