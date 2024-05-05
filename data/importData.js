@@ -29,9 +29,7 @@ const importData = async function () {
   try {
     await Blog.create(blogs);
     await Products.create(products);
-    console.log(
-      "Data sucessfully imported! Kindly proceed to your API tester to see the deployed data 😊👌"
-    );
+    console.log("Data sucessfully imported 😊👌!");
   } catch (err) {
     console.log(
       "An error occured while trying to import data 😞☹! Kindly connect to your internet! "
@@ -44,9 +42,7 @@ const deleteData = async function () {
   try {
     await Blog.deleteMany();
     await Products.deleteMany();
-    console.log(
-      "Data successfully Deleted! Kindly note that you have no deployed data in your database 🙄🙄"
-    );
+    console.log("Data successfully Deleted ❌💯!");
   } catch (err) {
     console.log(
       "Failed to delete data! Kindly check your internet connection 😪"
