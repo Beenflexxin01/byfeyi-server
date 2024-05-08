@@ -34,6 +34,7 @@ const importData = async function () {
     console.log(
       "An error occured while trying to import data 😞☹! Kindly connect to your internet! "
     );
+    console.log(err.message);
   }
   process.exit(1);
 };
@@ -47,7 +48,7 @@ const deleteData = async function () {
     console.log(
       "Failed to delete data! Kindly check your internet connection 😪"
     );
-    console.log(err);
+    console.log(err.message);
   }
   process.exit(1);
 };
