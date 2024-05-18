@@ -9,7 +9,9 @@
   "scripts": {
     "start": "nodemon index.js",
     "dev": "nodemon index.js",
-    "vercel-build": "echo hello"
+    "vercel-build": "echo hello",
+    "data-import": "node data/importData --import",
+    "data-delete": "node data/importData --delete"
   },
   "repository": {
     "type": "git",
